@@ -1,0 +1,39 @@
+.page-detail>article {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.page-detail>article>div {
+	flex: 0% 1 1;
+	margin: 2rem;
+	max-width: 760px;
+}
+
+.page-detail>article table {
+	width: 100%;
+	text-align: left;
+	border-collapse: collapse;
+}
+
+.page-detail>article table th,
+.page-detail>article table td {
+	border-bottom: 1px solid;
+	padding: 0.5rem;
+}
+
+.page-detail>article table td {
+	border-color: #C7D0D5;
+}
+
+.page-detail>article table th {
+	border-color: #2f77eb;
+}
+
+.page-detail>article>div>section+section {
+	margin-top: 6rem;
+}
+
+.page-detail>article>div>section>*+* {
+	margin-top: 2rem;
+}

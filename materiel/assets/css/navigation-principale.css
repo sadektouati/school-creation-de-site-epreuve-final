@@ -1,0 +1,74 @@
+body>header{
+    display: flex;
+    flex-flow: column;
+    padding: 1rem;
+}
+
+body>header nav, body>header nav> ul {
+    align-items: center;
+    display: flex;
+}
+body>header nav> ul {
+    margin: 0;
+}
+
+body>header nav >ul> li + li {
+    margin-left: 1.5rem;
+}
+
+body>header li > *{
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    width: max-content;
+    cursor: pointer;
+}
+
+
+body>header .nav-secondaire ul{
+    background-color: #0a1e8d;
+    color: white;
+    margin-left: 2rem;
+    flex-grow: 1;
+}
+
+body>header nav> ul>li{
+    position: relative;
+}
+
+body>header nav> ul ul{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: -2px 5px 9px 0 #3838387d;
+    padding: 1rem;
+
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+
+    opacity: 0;
+    pointer-events: none;
+}
+
+body>header nav> ul ul a{
+    font-weight: 600;
+}
+
+body>header nav> ul :is(li:hover, li:focus) ul{
+    opacity: 1;
+    pointer-events: initial;
+}
+
+body>header aside{
+    margin-left: auto;
+    padding: 10px;
+    display: flex;
+    gap: 0.5rem;
+}
+
+body>header aside button{
+    color: initial;
+}

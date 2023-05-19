@@ -1,0 +1,39 @@
+.annonce-vedette {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 4rem 2rem;
+	padding: 2rem;
+	background-color: rgba(56, 48, 48, 0.337);
+	position: relative;
+	overflow: hidden;
+	min-height: 50vh;
+	font-size: 32px;
+	border-radius: 5px;
+}
+
+.annonce-vedette a {
+	background-color: #0b47a7;
+	padding: 1rem;
+	border-radius: 3px;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+.annonce-vedette * {
+	color: white;
+}
+.annonce-vedette *+* {
+	margin-top: 30px;
+}
+
+.annonce-vedette img {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}

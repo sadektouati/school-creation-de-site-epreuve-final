@@ -1,0 +1,15 @@
+@import "reset.css";
+@import "utilitaires.css";
+
+@import "navigation-principale.css";
+@import "liens-rapides.css";
+@import "entete-principale.css";
+
+@import "annonce-vedette.css";
+@import "nouveaute.css";
+
+@import "page-detail.css";
+@import "encart.css";
+
+
+@import "pied-principal.css";
